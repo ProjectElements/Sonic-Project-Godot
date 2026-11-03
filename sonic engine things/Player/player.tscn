@@ -1,6 +1,6 @@
 [gd_scene load_steps=119 format=4 uid="uid://bea558noe02pm"]
 
-[ext_resource type="Script" uid="uid://cfmw38lbsqw0s" path="res://sonic engine things/Player/player.gd" id="1_3r5ht"]
+[ext_resource type="Script" uid="uid://cfmw38lbsqw0s" path="res://scripts/player.gd" id="1_3r5ht"]
 [ext_resource type="Texture2D" uid="uid://bqls616v15rkl" path="res://sonic engine things/Player/Mysonicsprites/soniccrouch.png" id="2_06y18"]
 [ext_resource type="Texture2D" uid="uid://bner07xck5wq" path="res://sonic engine things/Player/Mysonicsprites/sonicidle.png" id="2_juwfe"]
 [ext_resource type="Texture2D" uid="uid://dam8q8mvp8fjr" path="res://sonic engine things/Player/Mysonicsprites/sonicairdash (1).png" id="2_m0hqy"]

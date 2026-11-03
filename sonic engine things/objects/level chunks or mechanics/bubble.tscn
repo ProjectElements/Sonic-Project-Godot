@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://dwx3uxii5r7vf"]
 
-[ext_resource type="Script" uid="uid://biexm2mxu2jbj" path="res://sonic engine things/objects/level chunks or mechanics/bubble.gd" id="1_48efd"]
+[ext_resource type="Script" uid="uid://biexm2mxu2jbj" path="res://scripts/bubble.gd" id="1_48efd"]
 [ext_resource type="Texture2D" uid="uid://c82maqj6c8noc" path="res://sonic engine things/objects/level chunks or mechanics/bubble.png" id="2_opw10"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_f5ch0"]

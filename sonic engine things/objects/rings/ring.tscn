@@ -1,7 +1,7 @@
 [gd_scene load_steps=16 format=4 uid="uid://cl7xe1pd5mq8b"]
 
 [ext_resource type="Texture2D" uid="uid://bauwxso1hps11" path="res://sonic engine things/objects/rings/ring.png" id="1_1770h"]
-[ext_resource type="Script" uid="uid://b2oopukm7xe2o" path="res://sonic engine things/objects/rings/ring.gd" id="1_udapp"]
+[ext_resource type="Script" uid="uid://b2oopukm7xe2o" path="res://scripts/ring.gd" id="1_udapp"]
 [ext_resource type="Texture2D" uid="uid://cdss4c6qalf2e" path="res://sonic engine things/objects/rings/ringcollected.png" id="3_1th6h"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_udapp"]

@@ -24,13 +24,13 @@ buses/default_bus_layout="res://sonic engine things/audiostuff/default_bus_layou
 
 [autoload]
 
-Global="*res://global.gd"
-Levelscriptex="*res://sonic engine things/levelscriptex.gd"
-Progress="*res://sonic engine things/progress.gd"
-Scenemanagement="*res://scenemanagement.gd"
-Exampleboss="*res://screens/exampleboss.gd"
-GloBcheck="*res://sonic engine things/objects/signposts/GLOBcheck.gd"
-Configfile="*res://configfile.gd"
+Global="*res://scripts/global.gd"
+Levelscriptex="*res://scripts/levelscriptex.gd"
+Progress="*res://scripts/progress.gd"
+Scenemanagement="*res://scripts/scenemanagement.gd"
+Exampleboss="*res://scripts/exampleboss.gd"
+GloBcheck="*res://scripts/GLOBcheck.gd"
+Configfile="*res://scripts/configfile.gd"
 
 [display]
 

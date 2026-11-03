@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bj8saohtjqirs"]
 
-[ext_resource type="Script" uid="uid://8bnrtsj3fqeu" path="res://logoscreen.gd" id="1_1u8lm"]
+[ext_resource type="Script" uid="uid://8bnrtsj3fqeu" path="res://scripts/logoscreen.gd" id="1_1u8lm"]
 [ext_resource type="Texture2D" uid="uid://dkl86vr4jndil" path="res://sonic engine things/Untitled127_20250727122747.png" id="2_nir64"]
 [ext_resource type="AudioStream" uid="uid://dnharnuirm1j4" path="res://sonic engine things/audiostuff/sfx/project elements!.mp3" id="3_nir64"]
 [ext_resource type="PackedScene" uid="uid://b1hejusbaepso" path="res://screens/settings.tscn" id="4_4b4k6"]

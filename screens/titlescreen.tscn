@@ -1,6 +1,6 @@
 [gd_scene load_steps=20 format=4 uid="uid://wg5ysl2jr2ve"]
 
-[ext_resource type="Script" uid="uid://dxbpn6dlnjdov" path="res://titlescreen.gd" id="1_if6oa"]
+[ext_resource type="Script" uid="uid://dxbpn6dlnjdov" path="res://scripts/titlescreen.gd" id="1_if6oa"]
 [ext_resource type="Texture2D" uid="uid://c0wjtb64dng2k" path="res://icon.svg" id="2_mtk7u"]
 [ext_resource type="Texture2D" uid="uid://dbey7st5ws57m" path="res://sonic engine things/Advance3_sonic.webp" id="2_w3eoj"]
 

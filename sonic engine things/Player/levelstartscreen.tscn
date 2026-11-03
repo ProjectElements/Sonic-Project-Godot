@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://xr1ksy08vf3e"]
 
-[ext_resource type="Script" uid="uid://cwmm0j61sbffj" path="res://sonic engine things/Player/levelstartscreen.gd" id="1_s4o56"]
+[ext_resource type="Script" uid="uid://cwmm0j61sbffj" path="res://scripts/levelstartscreen.gd" id="1_s4o56"]
 
 [sub_resource type="Gradient" id="Gradient_4571q"]
 offsets = PackedFloat32Array(0)

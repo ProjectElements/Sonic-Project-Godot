@@ -1,6 +1,6 @@
 [gd_scene load_steps=140 format=4 uid="uid://ctnloxva4ieeu"]
 
-[ext_resource type="Script" uid="uid://chk0gh4s8hjra" path="res://sonic engine things/bossstuff/eggmanhammerboss.gd" id="1_2f07q"]
+[ext_resource type="Script" uid="uid://chk0gh4s8hjra" path="res://scripts/eggmanhammerboss.gd" id="1_2f07q"]
 [ext_resource type="Texture2D" uid="uid://dnbj3omslmw7g" path="res://sonic engine things/bossstuff/Eggmansprites/eggman.png" id="1_hy1rn"]
 [ext_resource type="Texture2D" uid="uid://bdx4hrtj6210v" path="res://sonic engine things/bossstuff/Eggmansprites/egghammerconnectors.png" id="2_2f07q"]
 [ext_resource type="Texture2D" uid="uid://bx1udcuuj54w6" path="res://sonic engine things/bossstuff/Eggmansprites/egghammerbody.png" id="2_4qdxh"]

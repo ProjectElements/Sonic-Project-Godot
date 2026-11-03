@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://coituqs0h71qi"]
 
 [ext_resource type="Texture2D" uid="uid://3xho7fwu6tmn" path="res://sonic engine things/objects/signposts/checkpointtopreg.png" id="1_jxykg"]
-[ext_resource type="Script" uid="uid://optevrdf4ug0" path="res://sonic engine things/objects/signposts/checkpoint.gd" id="1_skeeo"]
+[ext_resource type="Script" uid="uid://optevrdf4ug0" path="res://scripts/checkpoint.gd" id="1_skeeo"]
 [ext_resource type="Texture2D" uid="uid://njqv1fc6eu88" path="res://sonic engine things/objects/signposts/checkpointtop.png" id="2_nusyc"]
 [ext_resource type="Texture2D" uid="uid://b47gls2stglge" path="res://sonic engine things/objects/signposts/checkpointbot.png" id="2_skeeo"]
 [ext_resource type="AudioStream" uid="uid://cfm7i5qgkayw7" path="res://sonic engine things/audiostuff/sfx/checkPsound.wav" id="5_qy4eq"]

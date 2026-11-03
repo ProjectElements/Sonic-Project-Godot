@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=3 uid="uid://ddccrcx26i1ax"]
 
-[ext_resource type="Script" uid="uid://dhwqwiwjvbdsl" path="res://sonic engine things/objects/spring.gd" id="1_l111e"]
+[ext_resource type="Script" uid="uid://dhwqwiwjvbdsl" path="res://scripts/spring.gd" id="1_l111e"]
 [ext_resource type="Texture2D" uid="uid://k0fk3wsargp1" path="res://sonic engine things/objects/spring.png" id="2_f3uyv"]
 [ext_resource type="AudioStream" uid="uid://orhxp2tp4glq" path="res://sonic engine things/audiostuff/sfx/daspring.wav" id="3_6vypc"]
 

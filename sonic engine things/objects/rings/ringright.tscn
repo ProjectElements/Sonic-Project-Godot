@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=4 uid="uid://dwc3vyxviiapp"]
 
-[ext_resource type="Script" uid="uid://exutsnrfg81d" path="res://sonic engine things/objects/rings/ringright.gd" id="1_j81o5"]
+[ext_resource type="Script" uid="uid://exutsnrfg81d" path="res://scripts/ringright.gd" id="1_j81o5"]
 [ext_resource type="Texture2D" uid="uid://bauwxso1hps11" path="res://sonic engine things/objects/rings/ring.png" id="2_x1xms"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_j28hm"]

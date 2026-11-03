@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://brgyqgldlwgv"]
 
-[ext_resource type="Script" uid="uid://bjt16nf3nk0d5" path="res://sonic engine things/objects/level chunks or mechanics/loop_flat.gd" id="1_5l7mn"]
+[ext_resource type="Script" uid="uid://bjt16nf3nk0d5" path="res://scripts/loop_flat.gd" id="1_5l7mn"]
 
 [sub_resource type="Gradient" id="Gradient_5l7mn"]
 

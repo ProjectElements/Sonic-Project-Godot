@@ -1,7 +1,7 @@
 [gd_scene load_steps=17 format=3 uid="uid://dbmcj4ntwpru8"]
 
 [ext_resource type="Texture2D" uid="uid://bilb4qp2rdmmn" path="res://sonic engine things/objects/signposts/signpost.png" id="1_fsnab"]
-[ext_resource type="Script" uid="uid://cm2cywmrugi0t" path="res://sonic engine things/objects/signposts/signpost.gd" id="1_xx8p0"]
+[ext_resource type="Script" uid="uid://cm2cywmrugi0t" path="res://scripts/signpost.gd" id="1_xx8p0"]
 [ext_resource type="AudioStream" uid="uid://cc0wxa6n4l8jc" path="res://sonic engine things/audiostuff/sfx/signpost.wav" id="3_rki00"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xx8p0"]

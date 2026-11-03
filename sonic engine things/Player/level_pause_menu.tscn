@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c1n04yvjir14g"]
 
-[ext_resource type="Script" uid="uid://dv0bkttitdy4b" path="res://sonic engine things/Player/level_pause_menu.gd" id="1_gavw1"]
+[ext_resource type="Script" uid="uid://dv0bkttitdy4b" path="res://scripts/level_pause_menu.gd" id="1_gavw1"]
 [ext_resource type="PackedScene" uid="uid://b1hejusbaepso" path="res://screens/settings.tscn" id="2_6ajlu"]
 
 [sub_resource type="Gradient" id="Gradient_6ajlu"]

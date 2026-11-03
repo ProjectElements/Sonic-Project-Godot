@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bog87wyguqmhg"]
 
-[ext_resource type="Script" uid="uid://dpd03rt44lify" path="res://sonic engine things/objects/level chunks or mechanics/pushable.gd" id="1_4id8o"]
+[ext_resource type="Script" uid="uid://dpd03rt44lify" path="res://scripts/pushable.gd" id="1_4id8o"]
 
 [sub_resource type="Gradient" id="Gradient_1jpa8"]
 

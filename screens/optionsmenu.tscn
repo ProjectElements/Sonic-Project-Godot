@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://coryk6elod5cb"]
 
-[ext_resource type="Script" uid="uid://dbqa7bf1713bw" path="res://screens/optionsmenu.gd" id="1_trnpf"]
+[ext_resource type="Script" uid="uid://dbqa7bf1713bw" path="res://scripts/optionsmenu.gd" id="1_trnpf"]
 [ext_resource type="PackedScene" uid="uid://b1hejusbaepso" path="res://screens/settings.tscn" id="2_egryl"]
 [ext_resource type="AudioStream" uid="uid://bgqm7qamiequo" path="res://sonic engine things/audiostuff/music/sonic advance 2/50 Options.mp3" id="3_egryl"]
 

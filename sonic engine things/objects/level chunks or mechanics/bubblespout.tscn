@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://bkfj700n5uhwo"]
 
-[ext_resource type="Script" uid="uid://bttwd5m1inqji" path="res://sonic engine things/objects/level chunks or mechanics/bubblespout.gd" id="1_nw4xn"]
+[ext_resource type="Script" uid="uid://bttwd5m1inqji" path="res://scripts/bubblespout.gd" id="1_nw4xn"]
 [ext_resource type="Texture2D" uid="uid://7jmhb4l3adbb" path="res://sonic engine things/objects/level chunks or mechanics/bubblebottom.png" id="1_xnu6b"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nw4xn"]

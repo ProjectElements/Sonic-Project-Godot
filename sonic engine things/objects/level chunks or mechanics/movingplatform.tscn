@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://6r3se0o4tere"]
 
-[ext_resource type="Script" uid="uid://b2cnv4vfibjb4" path="res://sonic engine things/objects/level chunks or mechanics/movingplat.gd" id="1_nwih1"]
+[ext_resource type="Script" uid="uid://b2cnv4vfibjb4" path="res://scripts/movingplat.gd" id="1_nwih1"]
 
 [sub_resource type="Curve2D" id="Curve2D_nwih1"]
 _data = {
