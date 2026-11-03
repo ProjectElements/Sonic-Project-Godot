@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://8hmm0hwwjd5q"
+path="res://.godot/imported/31_-_Twinkle_Snow_Act_2.mp3-d4a74dcd2f154555543d88a2bf8c3095.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 3/31_-_Twinkle_Snow_Act_2.mp3"
+dest_files=["res://.godot/imported/31_-_Twinkle_Snow_Act_2.mp3-d4a74dcd2f154555543d88a2bf8c3095.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

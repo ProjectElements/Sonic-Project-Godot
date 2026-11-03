@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c75wwjaujxyek"
+path="res://.godot/imported/03_-_Main_Menu.mp3-0c69173d3a33fa9c6c3764a34f31e5ad.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 3/03_-_Main_Menu.mp3"
+dest_files=["res://.godot/imported/03_-_Main_Menu.mp3-0c69173d3a33fa9c6c3764a34f31e5ad.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

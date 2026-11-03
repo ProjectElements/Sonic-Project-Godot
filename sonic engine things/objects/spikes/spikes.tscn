@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbj62xpam8vcr"]
+
+[ext_resource type="Texture2D" uid="uid://b5sv1uix61r6n" path="res://sonic engine things/objects/spikes/spikes (1).png" id="1_educ8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6u072"]
+size = Vector2(25, 3)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ad5g"]
+size = Vector2(43, 20)
+
+[node name="spikes" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_educ8")
+
+[node name="spike area" type="Area2D" parent="." groups=["damagearea"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike area"]
+position = Vector2(-1.5, -1.5)
+shape = SubResource("RectangleShape2D_6u072")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+collision_layer = 3
+collision_mask = 3
+gravity_scale = 0.0
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(-1.5, 10)
+shape = SubResource("RectangleShape2D_4ad5g")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://jsb6hijf7p6o"
+path="res://.godot/imported/62 Extra Ending.mp3-4c44d877c2c40731a95ea630afe74116.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 2/62 Extra Ending.mp3"
+dest_files=["res://.godot/imported/62 Extra Ending.mp3-4c44d877c2c40731a95ea630afe74116.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

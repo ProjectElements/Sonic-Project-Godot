@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bsxbhnwjpykrl"
+path="res://.godot/imported/07_-_Chao_Playground.mp3-08797d6be22dd8fcd91c5f06b2411dab.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 3/07_-_Chao_Playground.mp3"
+dest_files=["res://.godot/imported/07_-_Chao_Playground.mp3-08797d6be22dd8fcd91c5f06b2411dab.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

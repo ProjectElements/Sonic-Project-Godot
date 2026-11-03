@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://83a66h1oryiw"
+path="res://.godot/imported/47 Time Attack 1.mp3-3576190189978aaf52074d473be2271e.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 2/47 Time Attack 1.mp3"
+dest_files=["res://.godot/imported/47 Time Attack 1.mp3-3576190189978aaf52074d473be2271e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

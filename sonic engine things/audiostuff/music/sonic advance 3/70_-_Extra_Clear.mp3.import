@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dhbkv641npvo8"
+path="res://.godot/imported/70_-_Extra_Clear.mp3-e22ebda76c3822e3b49eea7ef3e7f85f.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 3/70_-_Extra_Clear.mp3"
+dest_files=["res://.godot/imported/70_-_Extra_Clear.mp3-e22ebda76c3822e3b49eea7ef3e7f85f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

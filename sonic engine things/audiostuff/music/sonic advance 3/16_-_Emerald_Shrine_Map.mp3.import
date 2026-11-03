@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bhu1a1xkk3ymu"
+path="res://.godot/imported/16_-_Emerald_Shrine_Map.mp3-2f329a77e76d23fb273ef656468f2b16.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 3/16_-_Emerald_Shrine_Map.mp3"
+dest_files=["res://.godot/imported/16_-_Emerald_Shrine_Map.mp3-2f329a77e76d23fb273ef656468f2b16.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dvvvov7hvw745"
+path="res://.godot/imported/38_-_Chaos_Angel_Act_3.mp3-7dd77bb1e8933880bc670e9ea9cfe797.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/loops/38_-_Chaos_Angel_Act_3.mp3"
+dest_files=["res://.godot/imported/38_-_Chaos_Angel_Act_3.mp3-7dd77bb1e8933880bc670e9ea9cfe797.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

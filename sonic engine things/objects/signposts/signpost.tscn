@@ -1,0 +1,127 @@
+[gd_scene load_steps=17 format=3 uid="uid://dbmcj4ntwpru8"]
+
+[ext_resource type="Texture2D" uid="uid://bilb4qp2rdmmn" path="res://sonic engine things/objects/signposts/signpost.png" id="1_fsnab"]
+[ext_resource type="Script" uid="uid://cm2cywmrugi0t" path="res://sonic engine things/objects/signposts/signpost.gd" id="1_xx8p0"]
+[ext_resource type="AudioStream" uid="uid://cc0wxa6n4l8jc" path="res://sonic engine things/audiostuff/sfx/signpost.wav" id="3_rki00"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xx8p0"]
+atlas = ExtResource("1_fsnab")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rki00"]
+atlas = ExtResource("1_fsnab")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fp1x0"]
+atlas = ExtResource("1_fsnab")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_05mtr"]
+atlas = ExtResource("1_fsnab")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l4der"]
+atlas = ExtResource("1_fsnab")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e8iv4"]
+atlas = ExtResource("1_fsnab")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_548xc"]
+atlas = ExtResource("1_fsnab")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4qb87"]
+atlas = ExtResource("1_fsnab")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ispi"]
+atlas = ExtResource("1_fsnab")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p4wb7"]
+atlas = ExtResource("1_fsnab")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xpr42"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xx8p0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rki00")
+}],
+"loop": true,
+"name": &"donespinning",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fp1x0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_05mtr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l4der")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e8iv4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_548xc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4qb87")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ispi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p4wb7")
+}],
+"loop": true,
+"name": &"spinning",
+"speed": 60.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rki00"]
+size = Vector2(32, 42476)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fp1x0"]
+size = Vector2(610, 42443)
+
+[node name="signpost" type="Node2D"]
+script = ExtResource("1_xx8p0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_xpr42")
+animation = &"donespinning"
+autoplay = "default"
+frame_progress = 0.96054
+
+[node name="signpostarea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="signpostarea"]
+position = Vector2(0, -21222)
+shape = SubResource("RectangleShape2D_rki00")
+
+[node name="signpostsound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_rki00")
+bus = &"world sfx"
+
+[node name="levelendarea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="levelendarea"]
+position = Vector2(-289, -21205.5)
+shape = SubResource("RectangleShape2D_fp1x0")
+
+[connection signal="area_entered" from="signpostarea" to="." method="_on_signpostarea_area_entered"]
+[connection signal="area_entered" from="levelendarea" to="." method="_on_levelendarea_area_entered"]

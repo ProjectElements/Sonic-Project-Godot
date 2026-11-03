@@ -1,0 +1,87 @@
+[gd_scene load_steps=11 format=3 uid="uid://brgyqgldlwgv"]
+
+[ext_resource type="Script" uid="uid://bjt16nf3nk0d5" path="res://sonic engine things/objects/level chunks or mechanics/loop_flat.gd" id="1_5l7mn"]
+
+[sub_resource type="Gradient" id="Gradient_5l7mn"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_bxlhm"]
+gradient = SubResource("Gradient_5l7mn")
+fill_to = Vector2(0, 0)
+
+[sub_resource type="Gradient" id="Gradient_eoub4"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_hs8on"]
+gradient = SubResource("Gradient_eoub4")
+fill_from = Vector2(1, 0)
+
+[sub_resource type="Gradient" id="Gradient_f40v2"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_tykcp"]
+gradient = SubResource("Gradient_f40v2")
+fill_to = Vector2(0, 0)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_plt48"]
+size = Vector2(20, 1218)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5l7mn"]
+size = Vector2(10, 1338)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bxlhm"]
+size = Vector2(8, 1338)
+
+[node name="loop flat" type="StaticBody2D"]
+script = ExtResource("1_5l7mn")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(15, -134, 44, -128, 64, -112, 80, -88, 112, -88, 112, -128, 112, -168, 16, -168, -80, -168, -80, -128, -80, -88, -48, -88, -32, -112, -13, -128)
+
+[node name="Polygon2D" type="Polygon2D" parent="CollisionPolygon2D"]
+position = Vector2(-24, -176)
+texture = SubResource("GradientTexture2D_bxlhm")
+polygon = PackedVector2Array(-56, 8, 136, 8, 136, 88, 104, 88, 88, 64, 64, 48, 39, 42, 16, 48, -8, 64, -24, 88, -56, 88)
+uv = PackedVector2Array(8.25116, 8.85524, 53.3329, 38.2389, 14.2889, 48.3018)
+
+[node name="loopfront" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-80, -88, -72, -40, -32, 0, 16, 0, -24, -16, -48, -48, -48, -88)
+disabled = true
+
+[node name="Polygon2D" type="Polygon2D" parent="loopfront"]
+position = Vector2(-48, -48)
+texture = SubResource("GradientTexture2D_hs8on")
+polygon = PackedVector2Array(0, 0, 24, 32, 64, 48, 16, 48, -24, 8, -32, -40, 0, -40)
+uv = PackedVector2Array(11.8738, 6.44015, 53.3329, 39.4464, 19.5216, 48.7043)
+
+[node name="loopback" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(80, -88, 80, -48, 56, -16, 16, 0, 64, 0, 104, -40, 112, -88)
+
+[node name="Polygon2D" type="Polygon2D" parent="loopback"]
+position = Vector2(8, -48)
+texture = SubResource("GradientTexture2D_tykcp")
+polygon = PackedVector2Array(48, 32, 72, 0, 72, -40, 104, -40, 96, 8, 56, 48, 8, 48)
+uv = PackedVector2Array(18.7166, 10.0628, 56.9556, 38.2389, 12.6788, 44.6791)
+
+[node name="sonic checker" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sonic checker"]
+position = Vector2(16, -727)
+shape = SubResource("RectangleShape2D_plt48")
+
+[node name="sonic front check" type="Area2D" parent="."]
+position = Vector2(-8, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sonic front check"]
+position = Vector2(-99, -667)
+shape = SubResource("RectangleShape2D_5l7mn")
+disabled = true
+
+[node name="sonic back check" type="Area2D" parent="."]
+position = Vector2(8, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sonic back check"]
+position = Vector2(132, -667)
+shape = SubResource("RectangleShape2D_bxlhm")
+
+[connection signal="area_entered" from="sonic checker" to="." method="_on_sonic_checker_area_entered"]
+[connection signal="area_exited" from="sonic checker" to="." method="_on_sonic_checker_area_exited"]
+[connection signal="area_exited" from="sonic front check" to="." method="_on_sonic_front_check_area_exited"]
+[connection signal="area_exited" from="sonic back check" to="." method="_on_sonic_back_check_area_exited"]

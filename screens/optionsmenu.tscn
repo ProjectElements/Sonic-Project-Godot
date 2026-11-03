@@ -1,0 +1,50 @@
+[gd_scene load_steps=6 format=3 uid="uid://coryk6elod5cb"]
+
+[ext_resource type="Script" uid="uid://dbqa7bf1713bw" path="res://screens/optionsmenu.gd" id="1_trnpf"]
+[ext_resource type="PackedScene" uid="uid://b1hejusbaepso" path="res://screens/settings.tscn" id="2_egryl"]
+[ext_resource type="AudioStream" uid="uid://bgqm7qamiequo" path="res://sonic engine things/audiostuff/music/sonic advance 2/50 Options.mp3" id="3_egryl"]
+
+[sub_resource type="Gradient" id="Gradient_pd3d5"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_0aqm6"]
+gradient = SubResource("Gradient_pd3d5")
+
+[node name="optionsmenu" type="Node2D"]
+script = ExtResource("1_trnpf")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1352.0
+offset_bottom = 752.0
+texture = SubResource("GradientTexture1D_0aqm6")
+
+[node name="settings" parent="." instance=ExtResource("2_egryl")]
+offset_left = 688.0
+offset_top = 160.0
+offset_right = 688.0
+offset_bottom = 160.0
+
+[node name="musvolume" parent="settings/MarginContainer/VBoxContainer" index="2"]
+focus_neighbor_top = NodePath("../../../../backbutton")
+
+[node name="framerate" parent="settings/MarginContainer/VBoxContainer" index="10"]
+focus_neighbor_bottom = NodePath("../../../../backbutton")
+
+[node name="backbutton" type="Button" parent="."]
+offset_left = 560.0
+offset_top = 584.0
+offset_right = 784.0
+offset_bottom = 680.0
+focus_neighbor_top = NodePath("../settings/MarginContainer/VBoxContainer/framerate")
+focus_neighbor_bottom = NodePath("../settings/MarginContainer/VBoxContainer/musvolume")
+theme_override_font_sizes/font_size = 61
+text = "Back"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_egryl")
+autoplay = true
+bus = &"music"
+
+[connection signal="pressed" from="backbutton" to="." method="_on_backbutton_pressed"]
+
+[editable path="settings"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://chr70gbbni4f1"
+path="res://.godot/imported/29 Game Over.mp3-0393d13ecc65f562c04c87c9da7a55df.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 2/29 Game Over.mp3"
+dest_files=["res://.godot/imported/29 Game Over.mp3-0393d13ecc65f562c04c87c9da7a55df.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dehxf2awpdunr"
+path="res://.godot/imported/52_-_Ending_B.mp3-85cbc42d772f02159b620c1b2ef867a0.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 3/52_-_Ending_B.mp3"
+dest_files=["res://.godot/imported/52_-_Ending_B.mp3-85cbc42d772f02159b620c1b2ef867a0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

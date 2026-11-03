@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cucyb3r0tybdr"
+path="res://.godot/imported/51_-_Ending_A.mp3-e66482b0421681bf3f360e874ea6e8aa.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 3/51_-_Ending_A.mp3"
+dest_files=["res://.godot/imported/51_-_Ending_A.mp3-e66482b0421681bf3f360e874ea6e8aa.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cl8xw76wnan5q"
+path="res://.godot/imported/65 Unknown Jingle 3.mp3-61c16e1d52fcd2c6cfe45410e3c7a3ba.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 2/65 Unknown Jingle 3.mp3"
+dest_files=["res://.godot/imported/65 Unknown Jingle 3.mp3-61c16e1d52fcd2c6cfe45410e3c7a3ba.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

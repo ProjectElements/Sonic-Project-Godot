@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b1wo6nbeld2xt"
+path="res://.godot/imported/20 Boss -pinch-.mp3-99d26037b9038a6097bd35d333ba40f4.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/loops/20 Boss -pinch-.mp3"
+dest_files=["res://.godot/imported/20 Boss -pinch-.mp3-99d26037b9038a6097bd35d333ba40f4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,180 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqb6jb881xcid"]
+
+[ext_resource type="Script" uid="uid://qwk1yjciuova" path="res://sonic engine things/uimanager.gd" id="1_bc4dm"]
+[ext_resource type="Texture2D" uid="uid://dvunp8as3c8qy" path="res://sonic engine things/Player/8iapt3e3aab61.png" id="2_730vj"]
+
+[node name="uimanager" type="CanvasLayer"]
+script = ExtResource("1_bc4dm")
+
+[node name="rings" type="Label" parent="."]
+offset_left = 24.0
+offset_top = 96.0
+offset_right = 118.78
+offset_bottom = 120.0
+scale = Vector2(2.15, 2.15)
+text = "RINGS:"
+
+[node name="score" type="Label" parent="."]
+offset_left = 24.0
+offset_top = 4.0
+offset_right = 118.78
+offset_bottom = 28.0
+scale = Vector2(2.14, 2.14)
+text = "SCORE:"
+
+[node name="time" type="Label" parent="."]
+offset_left = 24.0
+offset_top = 48.0
+offset_right = 118.78
+offset_bottom = 72.0
+scale = Vector2(2.18, 2.18)
+text = "TIME:      "
+
+[node name="time2" type="Label" parent="."]
+offset_left = 208.0
+offset_top = 48.0
+offset_right = 302.78
+offset_bottom = 72.0
+scale = Vector2(2.165, 2.165)
+text = "'    ''"
+
+[node name="ringdisplay" type="Label" parent="."]
+offset_left = 176.0
+offset_top = 96.0
+offset_right = 216.0
+offset_bottom = 123.0
+scale = Vector2(2.145, 2.145)
+text = "0"
+
+[node name="actdisplay" type="Label" parent="."]
+visible = false
+offset_left = 888.0
+offset_top = 208.0
+offset_right = 928.0
+offset_bottom = 235.0
+scale = Vector2(5.11, 5.11)
+text = "1"
+
+[node name="scoredisplay" type="Label" parent="."]
+offset_left = 176.0
+offset_top = 4.0
+offset_right = 216.0
+offset_bottom = 31.0
+scale = Vector2(2.16, 2.16)
+text = "0"
+
+[node name="timedisplaymin" type="Label" parent="."]
+offset_left = 144.0
+offset_top = 48.0
+offset_right = 184.0
+offset_bottom = 75.0
+scale = Vector2(2.145, 2.145)
+text = "00"
+
+[node name="timedisplaysec" type="Label" parent="."]
+offset_left = 216.0
+offset_top = 48.0
+offset_right = 256.0
+offset_bottom = 75.0
+scale = Vector2(2.165, 2.165)
+text = "00"
+
+[node name="timedisplaymil" type="Label" parent="."]
+offset_left = 304.0
+offset_top = 48.0
+offset_right = 344.0
+offset_bottom = 75.0
+scale = Vector2(2.155, 2.155)
+text = "00"
+
+[node name="lifetex" type="TextureRect" parent="."]
+offset_left = 24.0
+offset_top = 616.0
+offset_right = 1026.0
+offset_bottom = 1413.0
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("2_730vj")
+
+[node name="lifedisplay" type="Label" parent="."]
+offset_left = 112.0
+offset_top = 632.0
+offset_right = 156.0
+offset_bottom = 655.0
+scale = Vector2(3.405, 3.405)
+text = "0"
+
+[node name="timebonusdisplay" type="Label" parent="."]
+visible = false
+offset_left = 616.0
+offset_top = 296.0
+offset_right = 803.0
+offset_bottom = 319.0
+scale = Vector2(2.31, 2.31)
+text = "0"
+
+[node name="ringbonusdisplay" type="Label" parent="."]
+visible = false
+offset_left = 616.0
+offset_top = 344.0
+offset_right = 803.0
+offset_bottom = 367.0
+scale = Vector2(2.31, 2.31)
+text = "0"
+
+[node name="finalscoredisplay" type="Label" parent="."]
+visible = false
+offset_left = 656.0
+offset_top = 416.0
+offset_right = 843.0
+offset_bottom = 439.0
+scale = Vector2(2.53, 2.53)
+text = "0"
+
+[node name="gameovertxt" type="Label" parent="."]
+visible = false
+offset_left = 80.0
+offset_top = 256.0
+offset_right = 200.0
+offset_bottom = 279.0
+scale = Vector2(9.395, 9.395)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+text = "GAME OVER"
+
+[node name="sonichaspassedtxt" type="Label" parent="."]
+visible = false
+offset_left = 312.0
+offset_top = 128.0
+offset_right = 474.0
+offset_bottom = 163.0
+scale = Vector2(4.365, 4.365)
+text = "Sonic Has 
+Passed Act"
+
+[node name="timebonus" type="Label" parent="."]
+visible = false
+offset_left = 336.0
+offset_top = 296.0
+offset_right = 464.0
+offset_bottom = 319.0
+scale = Vector2(2.15, 2.15)
+text = "TIME BONUS:"
+
+[node name="ringbonus" type="Label" parent="."]
+visible = false
+offset_left = 336.0
+offset_top = 344.0
+offset_right = 463.0
+offset_bottom = 367.0
+scale = Vector2(2.15, 2.15)
+text = "RING BONUS:"
+
+[node name="finalscore" type="Label" parent="."]
+visible = false
+offset_left = 312.0
+offset_top = 416.0
+offset_right = 417.0
+offset_bottom = 439.0
+scale = Vector2(2.415, 2.415)
+text = "FINAL SCORE:"

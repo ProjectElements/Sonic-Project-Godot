@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dqlrrewkuv46q"
+path="res://.godot/imported/stopping.wav-73d1990c0e6fc4d37643836c4fe50825.sample"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/sfx/stopping.wav"
+dest_files=["res://.godot/imported/stopping.wav-73d1990c0e6fc4d37643836c4fe50825.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

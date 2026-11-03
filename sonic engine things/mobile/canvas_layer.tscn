@@ -1,0 +1,104 @@
+[gd_scene load_steps=21 format=3 uid="uid://dqb3bijgrgm8h"]
+
+[ext_resource type="Script" uid="uid://cl85uv03ylf41" path="res://sonic engine things/mobile/touch.gd" id="1_u2x2o"]
+[ext_resource type="PackedScene" uid="uid://b18mpwgath068" path="res://sonic engine things/mobile/stick.tscn" id="2_u2x2o"]
+
+[sub_resource type="Gradient" id="Gradient_u2x2o"]
+colors = PackedColorArray(0, 0, 0, 0.537255, 0.282353, 1, 1, 0.517647)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_vggs5"]
+gradient = SubResource("Gradient_u2x2o")
+
+[sub_resource type="Gradient" id="Gradient_hyuhx"]
+colors = PackedColorArray(0, 0, 0.215686, 0.517647, 0, 0.639216, 0.639216, 0.435294)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_mqkbl"]
+gradient = SubResource("Gradient_hyuhx")
+
+[sub_resource type="Gradient" id="Gradient_vggs5"]
+colors = PackedColorArray(0, 0, 0, 0.545098, 1, 1, 1, 0.568627)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_hyuhx"]
+gradient = SubResource("Gradient_vggs5")
+
+[sub_resource type="Gradient" id="Gradient_mqkbl"]
+offsets = PackedFloat32Array(0, 0.42, 1)
+colors = PackedColorArray(0, 0, 0.258824, 0.619608, 0.0705882, 0.0705882, 0.0705882, 0.509804, 0.784314, 1, 1, 0.564706)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_k7blb"]
+gradient = SubResource("Gradient_mqkbl")
+
+[sub_resource type="Gradient" id="Gradient_fding"]
+colors = PackedColorArray(0, 0, 0, 0.537255, 1, 1, 0.509804, 0.568627)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_x6ctp"]
+gradient = SubResource("Gradient_fding")
+
+[sub_resource type="Gradient" id="Gradient_k7blb"]
+colors = PackedColorArray(0, 0, 0, 0.584314, 1, 0.686275, 0.352941, 0.498039)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_fding"]
+gradient = SubResource("Gradient_k7blb")
+
+[sub_resource type="Gradient" id="Gradient_gnvhb"]
+colors = PackedColorArray(0, 0, 0, 0.501961, 1, 0.564706, 1, 0.509804)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_lpk3i"]
+gradient = SubResource("Gradient_gnvhb")
+
+[sub_resource type="Gradient" id="Gradient_x6ctp"]
+colors = PackedColorArray(0, 0, 0, 0.380392, 0.509804, 0.556863, 1, 0.470588)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_gnvhb"]
+gradient = SubResource("Gradient_x6ctp")
+
+[sub_resource type="Gradient" id="Gradient_lpk3i"]
+colors = PackedColorArray(0, 0, 0, 0.27451, 0.396078, 1, 0.509804, 0.219608)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_3m3dy"]
+gradient = SubResource("Gradient_lpk3i")
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_u2x2o")
+
+[node name="jumpbutton" type="TouchScreenButton" parent="."]
+position = Vector2(1000, 472)
+scale = Vector2(0.8125, 208)
+texture_normal = SubResource("GradientTexture1D_vggs5")
+texture_pressed = SubResource("GradientTexture1D_mqkbl")
+passby_press = true
+action = "jump"
+
+[node name="spindashbuttom" type="TouchScreenButton" parent="."]
+position = Vector2(808, 472)
+scale = Vector2(0.46875, 120)
+texture_normal = SubResource("GradientTexture1D_hyuhx")
+texture_pressed = SubResource("GradientTexture1D_k7blb")
+passby_press = true
+action = "action"
+
+[node name="airdashbutton" type="TouchScreenButton" parent="."]
+position = Vector2(992, 344)
+scale = Vector2(0.3125, 80)
+texture_normal = SubResource("GradientTexture1D_x6ctp")
+texture_pressed = SubResource("GradientTexture1D_fding")
+passby_press = true
+action = "action2"
+
+[node name="instashield" type="TouchScreenButton" parent="."]
+position = Vector2(1120, 344)
+scale = Vector2(0.34375, 80)
+texture_normal = SubResource("GradientTexture1D_lpk3i")
+texture_pressed = SubResource("GradientTexture1D_gnvhb")
+passby_press = true
+action = "action3"
+
+[node name="stick" parent="." instance=ExtResource("2_u2x2o")]
+position = Vector2(168, 496)
+scale = Vector2(1.175, 1.175)
+
+[node name="pause" type="TouchScreenButton" parent="."]
+position = Vector2(1216, 0)
+scale = Vector2(0.25, 64)
+texture_normal = SubResource("GradientTexture1D_3m3dy")
+action = "enter"

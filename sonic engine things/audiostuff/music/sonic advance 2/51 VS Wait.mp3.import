@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c0lpt3wbedkt6"
+path="res://.godot/imported/51 VS Wait.mp3-215c3f45d1e57703669890d74290b41a.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 2/51 VS Wait.mp3"
+dest_files=["res://.godot/imported/51 VS Wait.mp3-215c3f45d1e57703669890d74290b41a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

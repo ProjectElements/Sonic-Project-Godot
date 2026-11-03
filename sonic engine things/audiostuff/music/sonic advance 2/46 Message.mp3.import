@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dbm18l6a8on5j"
+path="res://.godot/imported/46 Message.mp3-b1cfdf552b662bbd9d8d139db5417377.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 2/46 Message.mp3"
+dest_files=["res://.godot/imported/46 Message.mp3-b1cfdf552b662bbd9d8d139db5417377.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

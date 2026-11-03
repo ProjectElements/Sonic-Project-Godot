@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://bj8saohtjqirs"]
+
+[ext_resource type="Script" uid="uid://8bnrtsj3fqeu" path="res://logoscreen.gd" id="1_1u8lm"]
+[ext_resource type="Texture2D" uid="uid://dkl86vr4jndil" path="res://sonic engine things/Untitled127_20250727122747.png" id="2_nir64"]
+[ext_resource type="AudioStream" uid="uid://dnharnuirm1j4" path="res://sonic engine things/audiostuff/sfx/project elements!.mp3" id="3_nir64"]
+[ext_resource type="PackedScene" uid="uid://b1hejusbaepso" path="res://screens/settings.tscn" id="4_4b4k6"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_6goh2"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_1u8lm")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -56.0
+offset_top = -40.0
+offset_right = 20.0
+offset_bottom = 2.0
+scale = Vector2(18.33, 18.33)
+texture = SubResource("CanvasTexture_6goh2")
+
+[node name="Untitled12720250727122747" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("2_nir64")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_nir64")
+volume_db = -10.306
+autoplay = true
+bus = &"sfx"
+
+[node name="settings" parent="." instance=ExtResource("4_4b4k6")]
+visible = false
+offset_left = 664.0
+offset_top = 208.0
+offset_right = 664.0
+offset_bottom = 208.0

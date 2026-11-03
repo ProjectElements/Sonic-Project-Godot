@@ -1,0 +1,119 @@
+[gd_scene load_steps=13 format=3 uid="uid://dwx3uxii5r7vf"]
+
+[ext_resource type="Script" uid="uid://biexm2mxu2jbj" path="res://sonic engine things/objects/level chunks or mechanics/bubble.gd" id="1_48efd"]
+[ext_resource type="Texture2D" uid="uid://c82maqj6c8noc" path="res://sonic engine things/objects/level chunks or mechanics/bubble.png" id="2_opw10"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_f5ch0"]
+radius = 12.0416
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k17ah"]
+atlas = ExtResource("2_opw10")
+region = Rect2(96, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_01rer"]
+atlas = ExtResource("2_opw10")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5j5fq"]
+atlas = ExtResource("2_opw10")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1tuln"]
+atlas = ExtResource("2_opw10")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ut4k"]
+atlas = ExtResource("2_opw10")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jhy8u"]
+atlas = ExtResource("2_opw10")
+region = Rect2(96, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_txet1"]
+atlas = ExtResource("2_opw10")
+region = Rect2(96, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n4rbh"]
+atlas = ExtResource("2_opw10")
+region = Rect2(120, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7wx0d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k17ah")
+}],
+"loop": true,
+"name": &"bub",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_01rer")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5j5fq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1tuln")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ut4k")
+}, {
+"duration": 99999.0,
+"texture": SubResource("AtlasTexture_jhy8u")
+}],
+"loop": true,
+"name": &"inflate",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_txet1")
+}, {
+"duration": 1e+13,
+"texture": SubResource("AtlasTexture_n4rbh")
+}],
+"loop": true,
+"name": &"pop",
+"speed": 5.0
+}]
+
+[node name="bubble" type="RigidBody2D"]
+lock_rotation = true
+freeze = true
+script = ExtResource("1_48efd")
+
+[node name="Area2D" type="Area2D" parent="." groups=["bubble"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_f5ch0")
+disabled = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_7wx0d")
+animation = &"inflate"
+frame_progress = 0.0541625
+
+[node name="inflatetime" type="Timer" parent="."]
+wait_time = 1.5
+one_shot = true
+
+[node name="bubblefloattime" type="Timer" parent="."]
+wait_time = 6.0
+one_shot = true
+
+[node name="disappeartime" type="Timer" parent="."]
+wait_time = 2.5
+one_shot = true
+
+[node name="bubbletaken" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="timeout" from="inflatetime" to="." method="_on_inflatetime_timeout"]
+[connection signal="timeout" from="bubblefloattime" to="." method="_on_bubblefloattime_timeout"]
+[connection signal="timeout" from="disappeartime" to="." method="_on_disappeartime_timeout"]
+[connection signal="timeout" from="bubbletaken" to="." method="_on_bubbletaken_timeout"]

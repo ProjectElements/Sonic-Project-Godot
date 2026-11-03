@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://oaow6ce1xq6w"
+path="res://.godot/imported/14_-_Cyber_Track_Map.mp3-c7d9017fe96bf67ea80cd17663cf2134.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 3/14_-_Cyber_Track_Map.mp3"
+dest_files=["res://.godot/imported/14_-_Cyber_Track_Map.mp3-c7d9017fe96bf67ea80cd17663cf2134.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

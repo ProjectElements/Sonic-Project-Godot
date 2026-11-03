@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://5ducb2dr0ehk"
+path="res://.godot/imported/66_-_Clear_2.mp3-ffaeb8ec6003b6a00d5fddaa4d473d3d.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 3/66_-_Clear_2.mp3"
+dest_files=["res://.godot/imported/66_-_Clear_2.mp3-ffaeb8ec6003b6a00d5fddaa4d473d3d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

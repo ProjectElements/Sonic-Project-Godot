@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dnharnuirm1j4"
+path="res://.godot/imported/project elements!.mp3-308e84c43b22d9bb55aea9c9164a8286.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/sfx/project elements!.mp3"
+dest_files=["res://.godot/imported/project elements!.mp3-308e84c43b22d9bb55aea9c9164a8286.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

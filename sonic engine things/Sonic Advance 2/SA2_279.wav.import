@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bf8acnqy47xt"
+path="res://.godot/imported/SA2_279.wav-c156c3695e7e85da4b23b11cd5302826.sample"
+
+[deps]
+
+source_file="res://sonic engine things/Sonic Advance 2/SA2_279.wav"
+dest_files=["res://.godot/imported/SA2_279.wav-c156c3695e7e85da4b23b11cd5302826.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

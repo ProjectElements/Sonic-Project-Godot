@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://etcl5jty6er5"
+path="res://.godot/imported/85_-_Vs_Miss.mp3-bd279a6a9248287ec3bad66f38a616d2.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 3/85_-_Vs_Miss.mp3"
+dest_files=["res://.godot/imported/85_-_Vs_Miss.mp3-bd279a6a9248287ec3bad66f38a616d2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

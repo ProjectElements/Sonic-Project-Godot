@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bskyg5davvxb7"
+path="res://.godot/imported/39_-_Boss.mp3-a05fd8ab22f3bac13fa8a7a92c899439.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 3/39_-_Boss.mp3"
+dest_files=["res://.godot/imported/39_-_Boss.mp3-a05fd8ab22f3bac13fa8a7a92c899439.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

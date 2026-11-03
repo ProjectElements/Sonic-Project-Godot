@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://blf5hnfdq7ji4"
+path="res://.godot/imported/28_-_Toy_Kingdom_Act_2.mp3-368ac84a4e6f449116d148c2b7d17cd9.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 3/28_-_Toy_Kingdom_Act_2.mp3"
+dest_files=["res://.godot/imported/28_-_Toy_Kingdom_Act_2.mp3-368ac84a4e6f449116d148c2b7d17cd9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

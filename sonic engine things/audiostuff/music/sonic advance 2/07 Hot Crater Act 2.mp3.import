@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cbb608db15y7w"
+path="res://.godot/imported/07 Hot Crater Act 2.mp3-c4ee99fd069b0eec7fb7b6cd3693862a.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 2/07 Hot Crater Act 2.mp3"
+dest_files=["res://.godot/imported/07 Hot Crater Act 2.mp3-c4ee99fd069b0eec7fb7b6cd3693862a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

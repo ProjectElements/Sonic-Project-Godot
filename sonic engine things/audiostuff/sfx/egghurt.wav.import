@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://0udury2bunfx"
+path="res://.godot/imported/egghurt.wav-6ff3132fa255e57c83d24ba603bb7c1c.sample"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/sfx/egghurt.wav"
+dest_files=["res://.godot/imported/egghurt.wav-6ff3132fa255e57c83d24ba603bb7c1c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

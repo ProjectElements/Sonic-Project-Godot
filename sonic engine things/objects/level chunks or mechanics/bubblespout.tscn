@@ -1,0 +1,58 @@
+[gd_scene load_steps=8 format=3 uid="uid://bkfj700n5uhwo"]
+
+[ext_resource type="Script" uid="uid://bttwd5m1inqji" path="res://sonic engine things/objects/level chunks or mechanics/bubblespout.gd" id="1_nw4xn"]
+[ext_resource type="Texture2D" uid="uid://7jmhb4l3adbb" path="res://sonic engine things/objects/level chunks or mechanics/bubblebottom.png" id="1_xnu6b"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nw4xn"]
+atlas = ExtResource("1_xnu6b")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rem3v"]
+atlas = ExtResource("1_xnu6b")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k6nfq"]
+atlas = ExtResource("1_xnu6b")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3turi"]
+atlas = ExtResource("1_xnu6b")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hkcib"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nw4xn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rem3v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k6nfq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3turi")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[node name="bubblespout" type="Node2D"]
+script = ExtResource("1_nw4xn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -8)
+sprite_frames = SubResource("SpriteFrames_hkcib")
+autoplay = "default"
+frame_progress = 0.351415
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(0, -12)
+
+[node name="spawntime" type="Timer" parent="."]
+wait_time = 5.5
+one_shot = true
+
+[connection signal="timeout" from="spawntime" to="." method="_on_spawntime_timeout"]

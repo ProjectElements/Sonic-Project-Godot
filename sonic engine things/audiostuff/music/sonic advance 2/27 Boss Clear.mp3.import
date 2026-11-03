@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://1gsndllttmw1"
+path="res://.godot/imported/27 Boss Clear.mp3-bad4d422fecb1e6d0a62de844b774a30.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 2/27 Boss Clear.mp3"
+dest_files=["res://.godot/imported/27 Boss Clear.mp3-bad4d422fecb1e6d0a62de844b774a30.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

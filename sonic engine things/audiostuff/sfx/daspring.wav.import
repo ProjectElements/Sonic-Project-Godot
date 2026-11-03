@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://orhxp2tp4glq"
+path="res://.godot/imported/daspring.wav-b8fcc224bb6a89bb50378e46f17ec340.sample"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/sfx/daspring.wav"
+dest_files=["res://.godot/imported/daspring.wav-b8fcc224bb6a89bb50378e46f17ec340.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

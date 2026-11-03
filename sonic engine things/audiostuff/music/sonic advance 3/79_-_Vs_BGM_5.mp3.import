@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bq6mwytuegr7e"
+path="res://.godot/imported/79_-_Vs_BGM_5.mp3-a471524fc6762025ef975512f744640b.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 3/79_-_Vs_BGM_5.mp3"
+dest_files=["res://.godot/imported/79_-_Vs_BGM_5.mp3-a471524fc6762025ef975512f744640b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

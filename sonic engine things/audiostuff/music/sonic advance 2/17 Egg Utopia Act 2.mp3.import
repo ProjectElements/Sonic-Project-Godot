@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bjsscqctgaf3r"
+path="res://.godot/imported/17 Egg Utopia Act 2.mp3-7ce6511669d3a26925d496e3733f1ec0.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 2/17 Egg Utopia Act 2.mp3"
+dest_files=["res://.godot/imported/17 Egg Utopia Act 2.mp3-7ce6511669d3a26925d496e3733f1ec0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://vaq5u2msrf4"]
+
+[ext_resource type="Script" uid="uid://db6ngx1p10o5" path="res://new_level_bound.gd" id="1_h3ypc"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_2molk"]
+normal = Vector2(1, 0)
+distance = -439.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h3ypc"]
+size = Vector2(333, 4043)
+
+[node name="new level bound" type="Node2D"]
+script = ExtResource("1_h3ypc")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(-7, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(433, 0)
+shape = SubResource("WorldBoundaryShape2D_2molk")
+disabled = true
+
+[node name="player detection" type="Area2D" parent="."]
+position = Vector2(-217, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player detection"]
+position = Vector2(612, -1904)
+shape = SubResource("RectangleShape2D_h3ypc")
+disabled = true
+
+[connection signal="area_entered" from="player detection" to="." method="_on_player_detection_area_entered"]
+[connection signal="area_exited" from="player detection" to="." method="_on_player_detection_area_exited"]

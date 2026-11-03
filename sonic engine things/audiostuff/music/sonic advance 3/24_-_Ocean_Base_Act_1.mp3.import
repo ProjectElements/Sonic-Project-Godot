@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dptqbrl2q748e"
+path="res://.godot/imported/24_-_Ocean_Base_Act_1.mp3-e1eb79c3fed604d783f424cdc2f60ad3.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 3/24_-_Ocean_Base_Act_1.mp3"
+dest_files=["res://.godot/imported/24_-_Ocean_Base_Act_1.mp3-e1eb79c3fed604d783f424cdc2f60ad3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

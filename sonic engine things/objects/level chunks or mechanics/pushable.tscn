@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://bog87wyguqmhg"]
+
+[ext_resource type="Script" uid="uid://dpd03rt44lify" path="res://sonic engine things/objects/level chunks or mechanics/pushable.gd" id="1_4id8o"]
+
+[sub_resource type="Gradient" id="Gradient_1jpa8"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_1mset"]
+gradient = SubResource("Gradient_1jpa8")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nohsl"]
+size = Vector2(50, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5i5ar"]
+size = Vector2(12, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7fcjr"]
+size = Vector2(12, 50)
+
+[node name="pushable" type="RigidBody2D"]
+collision_layer = 3
+collision_mask = 3
+lock_rotation = true
+script = ExtResource("1_4id8o")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(15, 15)
+scale = Vector2(0.195312, 50)
+texture = SubResource("GradientTexture1D_1mset")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(15, 15)
+shape = SubResource("RectangleShape2D_nohsl")
+
+[node name="left" type="Area2D" parent="."]
+
+[node name="moveright" type="CollisionShape2D" parent="left"]
+position = Vector2(-4, 15)
+shape = SubResource("RectangleShape2D_5i5ar")
+
+[node name="right" type="Area2D" parent="."]
+
+[node name="moveleft" type="CollisionShape2D" parent="right"]
+position = Vector2(34, 15)
+shape = SubResource("RectangleShape2D_7fcjr")
+
+[connection signal="area_entered" from="left" to="." method="_on_left_area_entered"]
+[connection signal="area_exited" from="left" to="." method="_on_left_area_exited"]
+[connection signal="area_entered" from="right" to="." method="_on_right_area_entered"]
+[connection signal="area_exited" from="right" to="." method="_on_right_area_exited"]

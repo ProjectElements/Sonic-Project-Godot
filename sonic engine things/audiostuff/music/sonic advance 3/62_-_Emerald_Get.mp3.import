@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cw447scdqqwru"
+path="res://.godot/imported/62_-_Emerald_Get.mp3-e7ee2f8ebbfe13140354ab4fefcc1a62.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 3/62_-_Emerald_Get.mp3"
+dest_files=["res://.godot/imported/62_-_Emerald_Get.mp3-e7ee2f8ebbfe13140354ab4fefcc1a62.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://u0xycu0yh7l3"
+path="res://.godot/imported/15 Techno Base Act 2.mp3-bed21f90dbd73f5bd911867bfa6adbf9.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 2/15 Techno Base Act 2.mp3"
+dest_files=["res://.godot/imported/15 Techno Base Act 2.mp3-bed21f90dbd73f5bd911867bfa6adbf9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

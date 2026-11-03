@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://brjjjxnni0x5f"]
+
+[ext_resource type="Script" uid="uid://c6aaob40gov3u" path="res://creditscreen.gd" id="1_wlxci"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_70c0r"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_wlxci")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1296.0
+offset_bottom = 736.0
+texture = SubResource("CanvasTexture_70c0r")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -56.0
+offset_top = 208.0
+offset_right = 423.0
+offset_bottom = 283.0
+scale = Vector2(2.96, 2.96)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Created using Maddie's
+ Ultra-Simple Sonic Physics 
+for Godot 4"
+horizontal_alignment = 1

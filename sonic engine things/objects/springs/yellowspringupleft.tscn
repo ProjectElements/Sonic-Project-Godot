@@ -1,0 +1,105 @@
+[gd_scene load_steps=14 format=3 uid="uid://bfg0ixwc3i6b1"]
+
+[ext_resource type="Script" uid="uid://dhwqwiwjvbdsl" path="res://sonic engine things/objects/spring.gd" id="1_1f4cw"]
+[ext_resource type="Texture2D" uid="uid://bswxcunp5n685" path="res://sonic engine things/objects/yspring.png" id="2_jpn6t"]
+[ext_resource type="AudioStream" uid="uid://orhxp2tp4glq" path="res://sonic engine things/audiostuff/sfx/daspring.wav" id="3_mtx32"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x2upc"]
+atlas = ExtResource("2_jpn6t")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pj2n1"]
+atlas = ExtResource("2_jpn6t")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_54ist"]
+atlas = ExtResource("2_jpn6t")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jxsbs"]
+atlas = ExtResource("2_jpn6t")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ttp0c"]
+atlas = ExtResource("2_jpn6t")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fl22m"]
+atlas = ExtResource("2_jpn6t")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oxvs3"]
+atlas = ExtResource("2_jpn6t")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f0rg5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x2upc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pj2n1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_54ist")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jxsbs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ttp0c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fl22m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oxvs3")
+}],
+"loop": true,
+"name": &"sprung",
+"speed": 15.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m2cud"]
+size = Vector2(32, 22)
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_s6qc4"]
+points = PackedVector2Array(-8, 0, -8, -11, 8, -11, 8, 0)
+
+[node name="spring" type="Node2D"]
+rotation = -0.785398
+script = ExtResource("1_1f4cw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_f0rg5")
+autoplay = "default"
+frame_progress = 0.696566
+
+[node name="springarea" type="Area2D" parent="." groups=["yellowspringupleft"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="springarea"]
+position = Vector2(0, 5)
+shape = SubResource("RectangleShape2D_m2cud")
+
+[node name="thespringcollision" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="thespringcollision"]
+position = Vector2(0, 16)
+shape = SubResource("ConvexPolygonShape2D_s6qc4")
+
+[node name="spring" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_mtx32")
+bus = &"world sfx"
+
+[node name="springanim" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="area_entered" from="springarea" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="springarea" to="." method="_on_area_2d_area_exited"]
+[connection signal="timeout" from="springanim" to="." method="_on_springanim_timeout"]

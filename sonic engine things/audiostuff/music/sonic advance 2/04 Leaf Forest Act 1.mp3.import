@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dq0qa4mcpe0bc"
+path="res://.godot/imported/04 Leaf Forest Act 1.mp3-ad1bf356a1ad913251e68ee1b08c9bb0.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 2/04 Leaf Forest Act 1.mp3"
+dest_files=["res://.godot/imported/04 Leaf Forest Act 1.mp3-ad1bf356a1ad913251e68ee1b08c9bb0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

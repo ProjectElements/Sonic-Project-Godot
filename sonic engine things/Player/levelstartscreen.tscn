@@ -1,0 +1,66 @@
+[gd_scene load_steps=6 format=3 uid="uid://xr1ksy08vf3e"]
+
+[ext_resource type="Script" uid="uid://cwmm0j61sbffj" path="res://sonic engine things/Player/levelstartscreen.gd" id="1_s4o56"]
+
+[sub_resource type="Gradient" id="Gradient_4571q"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_14dfe"]
+gradient = SubResource("Gradient_4571q")
+
+[sub_resource type="Gradient" id="Gradient_ftuqg"]
+offsets = PackedFloat32Array(0, 0.97)
+colors = PackedColorArray(1, 0, 0, 1, 0.984314, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_k2eml"]
+gradient = SubResource("Gradient_ftuqg")
+
+[node name="levelstartscreen" type="CanvasLayer"]
+script = ExtResource("1_s4o56")
+
+[node name="startscreenbg" type="TextureRect" parent="."]
+offset_left = -16.0
+offset_right = 1296.0
+offset_bottom = 760.0
+texture = SubResource("GradientTexture1D_14dfe")
+
+[node name="startscreenbg2" type="TextureRect" parent="."]
+offset_left = -32.0
+offset_top = -816.0
+offset_right = 336.0
+offset_bottom = -16.0
+texture = SubResource("GradientTexture1D_k2eml")
+
+[node name="startscreentext" type="Node" parent="."]
+
+[node name="levelexstarttext" type="Label" parent="startscreentext"]
+offset_left = -1296.0
+offset_top = 376.0
+offset_right = -1061.0
+offset_bottom = 403.0
+scale = Vector2(5.24, 5.24)
+theme_override_colors/font_color = Color(0, 0, 1, 1)
+theme_override_colors/font_outline_color = Color(0.945832, 0.592057, 0, 1)
+theme_override_constants/outline_size = 6
+text = "Example Zone Act EX"
+
+[node name="bossexstarttext" type="Label" parent="startscreentext"]
+offset_left = -1296.0
+offset_top = 256.0
+offset_right = -1080.0
+offset_bottom = 283.0
+scale = Vector2(5.24, 5.24)
+theme_override_colors/font_color = Color(0, 0, 1, 1)
+theme_override_colors/font_outline_color = Color(0.945832, 0.592057, 0, 1)
+theme_override_constants/outline_size = 6
+text = "Example Zone BOSS"
+
+[node name="levelshown" type="Timer" parent="."]
+one_shot = true
+
+[node name="levelbegin" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="levelshown" to="." method="_on_levelshown_timeout"]
+[connection signal="timeout" from="levelbegin" to="." method="_on_levelbegin_timeout"]

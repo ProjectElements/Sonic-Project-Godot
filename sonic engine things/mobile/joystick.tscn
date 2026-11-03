@@ -1,0 +1,30 @@
+[gd_scene load_steps=7 format=3 uid="uid://djnrwseeybc5d"]
+
+[ext_resource type="Script" uid="uid://cfo6q7i6r0dkr" path="res://sonic engine things/mobile/joystick.gd" id="1_2kcjy"]
+
+[sub_resource type="Gradient" id="Gradient_dxjut"]
+colors = PackedColorArray(0, 0, 0, 0.501961, 0.0352941, 0.282353, 1, 0.509804)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_wr1l2"]
+gradient = SubResource("Gradient_dxjut")
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vpjjb"]
+radius = 45.99
+
+[sub_resource type="Gradient" id="Gradient_vij28"]
+colors = PackedColorArray(0.552941, 0, 0, 0.545098, 0.913725, 0.337255, 0.188235, 0.564706)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_12woj"]
+gradient = SubResource("Gradient_vij28")
+
+[node name="joystick" type="TouchScreenButton"]
+scale = Vector2(3, 3)
+texture_normal = SubResource("GradientTexture2D_wr1l2")
+shape = SubResource("CircleShape2D_vpjjb")
+visibility_mode = 1
+script = ExtResource("1_2kcjy")
+
+[node name="knob" type="Sprite2D" parent="."]
+position = Vector2(32, 32)
+scale = Vector2(0.166, 43.095)
+texture = SubResource("GradientTexture1D_12woj")

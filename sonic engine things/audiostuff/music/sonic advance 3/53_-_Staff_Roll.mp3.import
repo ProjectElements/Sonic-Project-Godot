@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bk2xhs3v02pyb"
+path="res://.godot/imported/53_-_Staff_Roll.mp3-b834c34d92b329d3d0d36c96206a8d97.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 3/53_-_Staff_Roll.mp3"
+dest_files=["res://.godot/imported/53_-_Staff_Roll.mp3-b834c34d92b329d3d0d36c96206a8d97.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

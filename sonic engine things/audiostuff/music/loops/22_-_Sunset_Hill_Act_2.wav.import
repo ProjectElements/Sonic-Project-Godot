@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dkf1lbgug0eq1"
+path="res://.godot/imported/22_-_Sunset_Hill_Act_2.wav-1258f9ed6bda05950a3a62300a9b2856.sample"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/loops/22_-_Sunset_Hill_Act_2.wav"
+dest_files=["res://.godot/imported/22_-_Sunset_Hill_Act_2.wav-1258f9ed6bda05950a3a62300a9b2856.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

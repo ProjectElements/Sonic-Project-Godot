@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cjl0nwjc03u2d"
+path="res://.godot/imported/dashrelease.wav-1ac7c7ea59af0cd1fc62bb482c823b43.sample"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/sfx/dashrelease.wav"
+dest_files=["res://.godot/imported/dashrelease.wav-1ac7c7ea59af0cd1fc62bb482c823b43.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

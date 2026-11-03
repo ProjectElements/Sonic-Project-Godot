@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ij6hgu0ndq00"
+path="res://.godot/imported/49_-_Extra_Demo_1.mp3-90cc84bcf0c52964560942e10bd16090.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 3/49_-_Extra_Demo_1.mp3"
+dest_files=["res://.godot/imported/49_-_Extra_Demo_1.mp3-90cc84bcf0c52964560942e10bd16090.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

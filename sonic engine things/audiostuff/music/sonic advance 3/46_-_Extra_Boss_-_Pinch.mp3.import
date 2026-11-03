@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bas8l4pha0se7"
+path="res://.godot/imported/46_-_Extra_Boss_-_Pinch.mp3-b2a210d38bdd13b558e35b6748b88afd.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 3/46_-_Extra_Boss_-_Pinch.mp3"
+dest_files=["res://.godot/imported/46_-_Extra_Boss_-_Pinch.mp3-b2a210d38bdd13b558e35b6748b88afd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

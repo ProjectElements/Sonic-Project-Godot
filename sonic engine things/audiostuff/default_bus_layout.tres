@@ -1,0 +1,56 @@
+[gd_resource type="AudioBusLayout" load_steps=2 format=3 uid="uid://drx07ohtr5lho"]
+
+[sub_resource type="AudioEffectPitchShift" id="AudioEffectPitchShift_j3pel"]
+resource_name = "PitchShift"
+
+[resource]
+bus/1/name = &"sfx"
+bus/1/solo = false
+bus/1/mute = false
+bus/1/bypass_fx = false
+bus/1/volume_db = -3.11736
+bus/1/send = &"Master"
+bus/1/effect/0/effect = SubResource("AudioEffectPitchShift_j3pel")
+bus/1/effect/0/enabled = true
+bus/2/name = &"music"
+bus/2/solo = false
+bus/2/mute = false
+bus/2/bypass_fx = false
+bus/2/volume_db = 0.0
+bus/2/send = &"Master"
+bus/3/name = &"sonicsfx"
+bus/3/solo = false
+bus/3/mute = false
+bus/3/bypass_fx = false
+bus/3/volume_db = -1.12151
+bus/3/send = &"sfx"
+bus/4/name = &"enemy sfx"
+bus/4/solo = false
+bus/4/mute = false
+bus/4/bypass_fx = false
+bus/4/volume_db = 0.0694828
+bus/4/send = &"sfx"
+bus/5/name = &"world sfx"
+bus/5/solo = false
+bus/5/mute = false
+bus/5/bypass_fx = false
+bus/5/volume_db = -0.725993
+bus/5/send = &"sfx"
+bus/6/name = &"bgm"
+bus/6/solo = false
+bus/6/mute = false
+bus/6/bypass_fx = false
+bus/6/volume_db = -4.003
+bus/6/send = &"music"
+bus/7/name = &"boss music"
+bus/7/solo = false
+bus/7/mute = false
+bus/7/bypass_fx = false
+bus/7/volume_db = 0.0
+bus/7/send = &"music"
+bus/8/name = &"jingles"
+bus/8/solo = false
+bus/8/mute = false
+bus/8/bypass_fx = false
+bus/8/volume_db = 0.0
+bus/8/send = &"music"

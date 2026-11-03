@@ -1,0 +1,86 @@
+[gd_scene load_steps=9 format=3 uid="uid://6r3se0o4tere"]
+
+[ext_resource type="Script" uid="uid://b2cnv4vfibjb4" path="res://sonic engine things/objects/level chunks or mechanics/movingplat.gd" id="1_nwih1"]
+
+[sub_resource type="Curve2D" id="Curve2D_nwih1"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 140, 66, 0, 0, 0, 0, 140, 44, 0, 0, 0, 0, 140, 15, 0, 0, 0, 0, 140, -29, 0, 0, 0, 0, 140, -82, 0, 0, 0, 0, 140, -132)
+}
+point_count = 6
+
+[sub_resource type="Gradient" id="Gradient_p6y8s"]
+colors = PackedColorArray(0, 0, 0, 1, 0.65098, 0.443137, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_yb58r"]
+gradient = SubResource("Gradient_p6y8s")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mk0dr"]
+size = Vector2(48, 16)
+
+[sub_resource type="Animation" id="Animation_pwxsr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PathFollow2D:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_ddg75"]
+resource_name = "plat"
+length = 2.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PathFollow2D:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(-1.56, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_w36r5"]
+_data = {
+&"RESET": SubResource("Animation_pwxsr"),
+&"plat": SubResource("Animation_ddg75")
+}
+
+[node name="Path2D" type="Path2D"]
+curve = SubResource("Curve2D_nwih1")
+script = ExtResource("1_nwih1")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+position = Vector2(140, 66)
+rotates = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="PathFollow2D"]
+remote_path = NodePath("../../AnimatableBody2D")
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
+position = Vector2(140, 66)
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D"]
+position = Vector2(16, 7.75)
+scale = Vector2(0.1875, 16.5)
+texture = SubResource("GradientTexture1D_yb58r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D"]
+position = Vector2(16, 8)
+shape = SubResource("RectangleShape2D_mk0dr")
+one_way_collision = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+callback_mode_process = 0
+libraries = {
+&"": SubResource("AnimationLibrary_w36r5")
+}

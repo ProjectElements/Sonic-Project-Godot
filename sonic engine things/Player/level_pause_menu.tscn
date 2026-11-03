@@ -1,0 +1,69 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1n04yvjir14g"]
+
+[ext_resource type="Script" uid="uid://dv0bkttitdy4b" path="res://sonic engine things/Player/level_pause_menu.gd" id="1_gavw1"]
+[ext_resource type="PackedScene" uid="uid://b1hejusbaepso" path="res://screens/settings.tscn" id="2_6ajlu"]
+
+[node name="level pause menu" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_gavw1")
+
+[node name="back" type="Button" parent="."]
+offset_left = 488.0
+offset_top = 168.0
+offset_right = 792.0
+offset_bottom = 264.0
+focus_neighbor_top = NodePath("../quit")
+focus_neighbor_bottom = NodePath("../setting")
+theme_override_font_sizes/font_size = 29
+text = "Back to Game"
+
+[node name="quit" type="Button" parent="."]
+offset_left = 488.0
+offset_top = 408.0
+offset_right = 792.0
+offset_bottom = 504.0
+focus_neighbor_top = NodePath("../setting")
+focus_neighbor_bottom = NodePath("../back")
+theme_override_font_sizes/font_size = 29
+text = "QUIT"
+
+[node name="setting" type="Button" parent="."]
+offset_left = 488.0
+offset_top = 280.0
+offset_right = 792.0
+offset_bottom = 392.0
+focus_neighbor_top = NodePath("../back")
+focus_neighbor_bottom = NodePath("../quit")
+theme_override_font_sizes/font_size = 46
+text = "settings"
+
+[node name="settings" parent="." instance=ExtResource("2_6ajlu")]
+visible = false
+offset_left = 8.0
+offset_top = 24.0
+offset_right = 8.0
+offset_bottom = 24.0
+
+[node name="musvolume" parent="settings/MarginContainer/VBoxContainer" index="2"]
+focus_neighbor_top = NodePath("../../../return")
+
+[node name="framerate" parent="settings/MarginContainer/VBoxContainer" index="10"]
+focus_neighbor_bottom = NodePath("../../../return")
+
+[node name="return" type="Button" parent="settings"]
+layout_mode = 0
+offset_left = 472.0
+offset_top = 552.0
+offset_right = 768.0
+offset_bottom = 656.0
+focus_neighbor_top = NodePath("../MarginContainer/VBoxContainer/framerate")
+focus_neighbor_bottom = NodePath("../MarginContainer/VBoxContainer/musvolume")
+theme_override_font_sizes/font_size = 46
+text = "back"
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="setting" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="settings/return" to="." method="_on_return_pressed"]
+
+[editable path="settings"]

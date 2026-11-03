@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dk24clsp7a6ti"
+path="res://.godot/imported/33_-_Cyber_Track_Act_1.mp3-2cfd794efea32c72cd8e3c0ab134b09d.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 3/33_-_Cyber_Track_Act_1.mp3"
+dest_files=["res://.godot/imported/33_-_Cyber_Track_Act_1.mp3-2cfd794efea32c72cd8e3c0ab134b09d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ck1stdbh4k3wx"
+path="res://.godot/imported/41 Special Result 1.mp3-d7140c965f8a4df9247d545bc9274508.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 2/41 Special Result 1.mp3"
+dest_files=["res://.godot/imported/41 Special Result 1.mp3-d7140c965f8a4df9247d545bc9274508.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

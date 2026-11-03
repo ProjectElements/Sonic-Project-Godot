@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bsiu3yinvd6py"
+path="res://.godot/imported/73_-_Time_Attack_Clear_1.mp3-82d4172b35dc1ed43b5c40c1ccb2bc2c.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 3/73_-_Time_Attack_Clear_1.mp3"
+dest_files=["res://.godot/imported/73_-_Time_Attack_Clear_1.mp3-82d4172b35dc1ed43b5c40c1ccb2bc2c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

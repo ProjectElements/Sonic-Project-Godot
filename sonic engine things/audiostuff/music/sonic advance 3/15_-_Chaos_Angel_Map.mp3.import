@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b6evkm5wf55xy"
+path="res://.godot/imported/15_-_Chaos_Angel_Map.mp3-71e38f3ae991b61f9a847073299c69de.mp3str"
+
+[deps]
+
+source_file="res://sonic engine things/audiostuff/music/sonic advance 3/15_-_Chaos_Angel_Map.mp3"
+dest_files=["res://.godot/imported/15_-_Chaos_Angel_Map.mp3-71e38f3ae991b61f9a847073299c69de.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

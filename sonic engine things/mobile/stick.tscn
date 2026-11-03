@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=3 uid="uid://b18mpwgath068"]
+
+[ext_resource type="Script" uid="uid://dyfeujpllqbgk" path="res://sonic engine things/mobile/stick.gd" id="1_dyjib"]
+[ext_resource type="Script" uid="uid://dm23hbvv7vur1" path="res://sonic engine things/mobile/knob.gd" id="2_xgha5"]
+
+[sub_resource type="Gradient" id="Gradient_yekaf"]
+colors = PackedColorArray(0, 0, 0, 0.619608, 1, 1, 1, 0.541176)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_1ebpb"]
+gradient = SubResource("Gradient_yekaf")
+
+[sub_resource type="Gradient" id="Gradient_dsm5h"]
+colors = PackedColorArray(0, 0, 0, 0.490196, 0.14902, 1, 1, 0.439216)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_clorh"]
+gradient = SubResource("Gradient_dsm5h")
+
+[node name="stick" type="Node2D"]
+position = Vector2(224, 464)
+script = ExtResource("1_dyjib")
+
+[node name="ring" type="Sprite2D" parent="."]
+scale = Vector2(1, 256)
+texture = SubResource("GradientTexture1D_1ebpb")
+
+[node name="knob" type="Sprite2D" parent="."]
+scale = Vector2(0.755, 193.658)
+texture = SubResource("GradientTexture1D_clorh")
+script = ExtResource("2_xgha5")
+
+[node name="Button" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -128.0
+offset_top = -128.0
+offset_right = 128.0
+offset_bottom = 128.0
+
+[connection signal="button_down" from="Button" to="knob" method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="knob" method="_on_button_button_up"]
