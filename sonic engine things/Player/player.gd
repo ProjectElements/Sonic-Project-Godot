@@ -827,7 +827,7 @@ func _physics_process(delta):
 				canjump = false
 				
 				if ! grounded and jumping: #and !Input.is_action_pressed("jump"):
-					motion.y = -JUMP_VELOCITY * 1.2 + -(abs(motion.x))#abs(motion.y) + abs(motion.x) * -40
+					motion.y = -(abs(motion.y)) * 1.2 + -(abs(motion.x))#abs(motion.y) + abs(motion.x) * -40
 				elif !grounded and !jumping:
 					motion.y = -JUMP_VELOCITY + -(abs(motion.x))
 					#motion.y += -400
