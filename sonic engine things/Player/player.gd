@@ -826,10 +826,11 @@ func _physics_process(delta):
 			if bouncing and spring:
 				canjump = false
 				
-				if ! grounded and jumping and !Input.is_action_pressed("jump"):
-					motion.y += abs(motion.y) + abs(motion.x) * -40
+				if ! grounded and jumping: #and !Input.is_action_pressed("jump"):
+					motion.y = -JUMP_VELOCITY * 1.2 + -(abs(motion.x))#abs(motion.y) + abs(motion.x) * -40
 				elif !grounded and !jumping:
-					motion.y += -400
+					motion.y = -JUMP_VELOCITY + -(abs(motion.x))
+					#motion.y += -400
 					
 				bouncing = false
 				spring = false

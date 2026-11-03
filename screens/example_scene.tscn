@@ -585,6 +585,18 @@ position = Vector2(1336, 153)
 curve = SubResource("Curve2D_dndo6")
 loop = false
 
+[node name="Path2D6" parent="movingplats" instance=ExtResource("46_wcg6e")]
+position = Vector2(1195, -54)
+curve = SubResource("Curve2D_dndo6")
+loop = false
+speedscale = 1.25
+
+[node name="Path2D7" parent="movingplats" instance=ExtResource("46_wcg6e")]
+position = Vector2(1141, -214)
+curve = SubResource("Curve2D_dndo6")
+loop = false
+speedscale = 1.44
+
 [node name="Path2D2" parent="movingplats" instance=ExtResource("46_wcg6e")]
 position = Vector2(4504, -2008)
 curve = SubResource("Curve2D_wcg6e")
@@ -647,7 +659,6 @@ position = Vector2(9773, -585)
 [node name="uimanager" parent="." instance=ExtResource("20_3dq8h")]
 
 [node name="level pause menu" parent="." instance=ExtResource("39_hi5yu")]
-visible = false
 
 [node name="levelstartscreen" parent="." instance=ExtResource("39_4gf8r")]
 
